@@ -1,0 +1,31 @@
+# Tests
+
+## Test 1 - App loads and displays main content [sanity]
+Viewport: desktop
+Description: Verifies the app loads correctly on desktop.
+
+Steps:
+1. Navigate to the app
+2. Wait for page to fully load
+
+Expected: "CHAMSEDDINE TOUAHRIA" title is visible.
+
+## Test 2 - Projects are fetched from DB
+Viewport: desktop
+Description: Verifies that project cards are rendered.
+
+Steps:
+1. Navigate to the app
+2. Scroll to the projects section
+
+Expected: At least one project card is visible.
+
+## Test 3 - Dashboard access gate
+Viewport: desktop
+Description: Verifies the dashboard requires a password.
+
+Steps:
+1. Navigate to /dashboard/
+2. Check for password input
+
+Expected: Password input is visible.
